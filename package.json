@@ -1,27 +1,39 @@
 {
-  "name": "authservice",
-  "version": "1.0.0",
-  "description": "the user management service",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node src/server.js",
-    "format:fix": "prettier . --write",
-    "format:check": "prettier . --check",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rakshithsantosh/mernspace-authservice.git"
-  },
-  "author": "Rakshith S",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rakshithsantosh/mernspace-authservice/issues"
-  },
-  "homepage": "https://github.com/rakshithsantosh/mernspace-authservice#readme",
-  "devDependencies": {
-    "@types/node": "^24.0.14",
-    "prettier": "3.6.2",
-    "typescript": "^5.8.3"
-  }
+    "name": "authservice",
+    "version": "1.0.0",
+    "description": "the user management service",
+    "main": "index.js",
+    "scripts": {
+        "dev": "node src/server.js",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rakshithsantosh/mernspace-authservice.git"
+    },
+    "author": "Rakshith S",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rakshithsantosh/mernspace-authservice/issues"
+    },
+    "homepage": "https://github.com/rakshithsantosh/mernspace-authservice#readme",
+    "devDependencies": {
+        "@eslint/js": "^9.31.0",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^24.0.14",
+        "eslint": "^9.31.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.1.2",
+        "prettier": "3.6.2",
+        "typescript": "^5.8.3",
+        "typescript-eslint": "^8.37.0"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npm run format:fix"
+        ]
+    }
 }
