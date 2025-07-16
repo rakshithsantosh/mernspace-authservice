@@ -1,0 +1,20 @@
+{
+  "name": "authservice",
+  "version": "1.0.0",
+  "description": "the user management service",
+  "main": "index.js",
+  "scripts": {
+    "dev":"node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakshithsantosh/mernspace-authservice.git"
+  },
+  "author": "Rakshith S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakshithsantosh/mernspace-authservice/issues"
+  },
+  "homepage": "https://github.com/rakshithsantosh/mernspace-authservice#readme"
+}
