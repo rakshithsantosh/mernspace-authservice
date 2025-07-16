@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "node src/server.js",
+    "format:fix": "prettier . --write",
+    "format:check": "prettier . --check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/rakshithsantosh/mernspace-authservice#readme",
   "devDependencies": {
     "@types/node": "^24.0.14",
+    "prettier": "3.6.2",
     "typescript": "^5.8.3"
   }
 }
