@@ -4,7 +4,7 @@
   "description": "the user management service",
   "main": "index.js",
   "scripts": {
-    "dev":"node src/server.js",
+    "dev": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/rakshithsantosh/mernspace-authservice/issues"
   },
-  "homepage": "https://github.com/rakshithsantosh/mernspace-authservice#readme"
+  "homepage": "https://github.com/rakshithsantosh/mernspace-authservice#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.14",
+    "typescript": "^5.8.3"
+  }
 }
