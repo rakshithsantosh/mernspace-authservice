@@ -1,5 +1,5 @@
 function welcome(name: string) {
-  console.log(name);
+    console.log(`Welcome, ${name}!`)
 }
 
-welcome("Rakshith");
+welcome('Rakshith')
