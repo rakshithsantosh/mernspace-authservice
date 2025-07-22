@@ -6,7 +6,7 @@ const startServer = () => {
     const PORT = Config.PORT || 3000
     try {
         app.listen(PORT, () => {
-            logger.info(`Auth service is listening on port`, { port: PORT })
+            logger.info(`Auth service is listening on port: `, { port: PORT })
         })
     } catch (error) {
         console.error('Error starting the server:', error)
