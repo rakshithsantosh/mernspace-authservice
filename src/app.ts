@@ -1,12 +1,15 @@
 import express, { NextFunction, Request, Response } from 'express'
 import logger from './config/logger'
 import { HttpError } from 'http-errors'
+import authRouter from './routes/auth'
 
 const app = express()
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Auth Service')
 })
+
+app.use('/auth', authRouter)
 
 //Global error handler end of the middlw ware chain
 

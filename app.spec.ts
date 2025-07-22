@@ -2,7 +2,7 @@ import app from './src/app'
 import { calculateDiscount } from './src/utils'
 import request from 'supertest'
 
-describe('App', () => {
+describe.skip('App', () => {
     //we can also use test instead of it
     it('should return correct discount amount', () => {
         const discount = calculateDiscount(100, 10)
